@@ -14,7 +14,6 @@ class Main:
             (WINDOW_WIDTH, WINDOW_HEIGHT))
         self.display_surface.fill('white')
         self.clock = pygame.time.Clock()
-        # self.petal = pygame.image.load('graphics/petal.png')
         self.background = pygame.image.load('graphics/Sky.png')
         self.ledge = pygame.image.load('graphics/brick_ledge.png')
 
@@ -28,10 +27,7 @@ class Main:
 
             self.display_surface.blit(self.background, (0, 0))
             self.display_surface.blit(self.ledge, (0, 0))
-            studentWork(self.display_surface)
-            # self.petal.fill((190, 50, 100, 100),
-            #                 special_flags=pygame.BLEND_MIN)
-            # self.display_surface.blit(self.petal, (0, 0))
+            student_work(self.display_surface)
             pygame.display.update()
 
 
